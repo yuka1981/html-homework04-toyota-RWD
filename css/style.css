@@ -24,16 +24,17 @@
 }
 
 .main-title span:nth-child(1) {
-  align-self: flex-end;
-  font-size: 5rem;
+  align-self: center;
+  font-size: 5.5rem;
   line-height: 5rem;
   font-weight: 100;
   transform: rotate(90deg);
 }
 
 .main-title span:nth-child(2) {
-  padding: 30px 5px;
-  font-size: 2rem;
+  padding: 25px 0;
+  text-align: center;
+  font-size: 2.5rem;
   font-weight: 100;
   flex-grow: 2;
 }
@@ -48,7 +49,7 @@
 
 .main-desc span {
   display: block;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 200;
   margin-bottom: 5px;
 }
