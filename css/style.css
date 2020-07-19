@@ -1,0 +1,163 @@
+/* General Settings */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+.section-block {
+  margin-bottom: 15px;
+}
+
+.info {
+  background-color: #000;
+  z-index: 1;
+  color: #fff;
+  position: relative;
+}
+
+.main-title {
+  background-color: rgb(171, 0, 8);
+  display: flex;
+  justify-content: flex-end;
+}
+
+.main-title span:nth-child(1) {
+  align-self: flex-end;
+  font-size: 5rem;
+  line-height: 5rem;
+  font-weight: 100;
+  transform: rotate(90deg);
+}
+
+.main-title span:nth-child(2) {
+  padding: 30px 5px;
+  font-size: 2rem;
+  font-weight: 100;
+  flex-grow: 2;
+}
+
+.main-desc {
+  background-color: #000;
+  color: #fff;
+  padding: 8px 16px;
+  z-index: 1;
+  position: absolute;
+}
+
+.main-desc span {
+  display: block;
+  font-size: 1rem;
+  font-weight: 200;
+  padding: 8px 8px;
+}
+
+.main-desc p {
+  font-size: 1rem;
+  line-height: 2;
+  font-weight: 100;
+  padding: 8px 8px;
+}
+
+.movie .play-icon {
+  width: 0;
+  height: 0;
+  margin-left: 18px;
+  border-top: 8px solid transparent;
+  border-left: 26px solid #fff;
+  border-bottom: 8px solid transparent;
+}
+
+.movie {
+  margin-left: 15%;
+  position: relative;
+}
+
+.movie img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+.section-block:nth-child(odd) .play-button {
+  width: 57px;
+  height: 36px;
+  background-color: rgb(171, 0, 8);
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 50%;
+  right: -10px;
+}
+
+.section-block:nth-child(even) .play-button {
+  width: 57px;
+  height: 36px;
+  background-color: rgb(171, 0, 8);
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 50%;
+  left: -10px;
+}
+
+.revolution {
+  position: relative;
+  background-color: rgb(234, 234, 234);
+  z-index: 1;
+  padding: 8px 20px;
+  margin-top: -24px;
+}
+
+.revolution span:first-child {
+  color: rgb(179, 32, 43);
+  font-size: 1rem;
+  font-weight: 500;
+  display: block;
+  display: flex;
+  align-items: center;
+}
+
+.revolution span:first-child::after {
+  content: '';
+  flex-grow: 1;
+  height: 2px;
+  margin-left: 8px;
+  background-color: rgb(179, 32, 43);
+}
+
+.revolution h4 {
+  display: inline-block;
+  padding: 4px 8px;
+  margin: 2px 0;
+  border-radius: 4px;
+  color: #fff;
+  background-color: #000;
+}
+
+.revolution p {
+  font-size: .9rem;
+  position: relative;
+  padding-left: 20px;
+}
+
+.revolution p::before {
+  content: '•';
+  position: absolute;
+  left: 5px;
+  top: 3px;
+  color:rgb(179, 32, 43);
+}
+
+@media screen and (max-width: 768px) {
+  .movie {
+    margin-top: -5%;
+    margin-left: 10%;
+  }
+  .main-desc {
+    position: relative;
+  }
+  .revolution {
+    margin-top: 0;
+  }
+}
