@@ -107,15 +107,14 @@
   position: absolute;
   display: flex;
   align-items: center;
+  top: 45%;
 }
 
 .section-block:nth-child(odd) .play-button {
-  top: 50%;
   right: -2%;
 }
 
 .section-block:nth-child(even) .play-button {
-  top: 50%;
   left: -2%;
 }
 
